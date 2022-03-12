@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RecipeBookComponent } from './recipe-book.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipe-item/recipe-item.component';
+import { RecipeRoutingModule } from './recipe-book-routing.module';
 
 
 
@@ -13,7 +14,8 @@ import { RecipeItemComponent } from './recipe-item/recipe-item.component';
     RecipeItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RecipeRoutingModule
   ]
 })
 export class RecipeBookModule { }
