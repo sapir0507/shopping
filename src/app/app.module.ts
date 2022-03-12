@@ -6,10 +6,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { RecipeBookModule } from '../recipe-book/recipe-book.module';
 import { ShoppingListModule } from '../shopping-list/shopping-list.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent,
+    HomeComponent
 
   ],
   imports: [
