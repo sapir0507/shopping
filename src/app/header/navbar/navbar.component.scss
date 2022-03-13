@@ -1,18 +1,18 @@
 :host{
-    .navbar{
+    .my-navbar{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        align-content: space-around;
+        justify-content: space-around;
+        margin-top: 2%;
+        width: 92%;
         a{
             font-size: 18px;
             text-decoration: none;
-            border-bottom: 0px solid black;
-            transition: all .2s;
+            border-bottom: 0px solid white;
+            transition: all .1s;
             &:hover{
-                border-bottom: 5px solid black;
-                transition: all .2s;
+                border-bottom: 5px solid white;
+                transition: all .1s;
             }   
             &.router-link-active{
                 color: crimson;
