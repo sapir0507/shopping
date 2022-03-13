@@ -23,13 +23,23 @@ import { NavbarComponent } from './header/navbar/navbar.component';
 
   ],
   imports: [
+
+    /* external modules */
     BrowserModule,
     RouterModule,
-    ShopeRoutingModule,/*go before the root*/
-    RecipeRoutingModule,
+    /* end external modules */
+    
+    /* routing */ 
+    RecipeRoutingModule,/* external paths go before the root*/
+    ShopeRoutingModule,
+
     AppRoutingModule,
+    /* end routhing */
+
+    /* in project modules */ 
     RecipeBookModule,
     ShoppingListModule
+    /* end project modules */
   ],
   providers: [],
   bootstrap: [AppComponent]

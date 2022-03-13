@@ -9,13 +9,20 @@ import { RecipeRoutingModule } from './recipe-book-routing.module';
 
 @NgModule({
   declarations: [
+    /* start created components */
     RecipeBookComponent,
     RecipeListComponent,
     RecipeItemComponent
+    /* end created components */
   ],
   imports: [
+    /* start external modules */
     CommonModule,
+    /* end external modules */
+
+    /* start routing modules */
     RecipeRoutingModule
+    /* end routing modules */
   ]
 })
 export class RecipeBookModule { }

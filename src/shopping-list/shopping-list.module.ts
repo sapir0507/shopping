@@ -10,13 +10,23 @@ import { IngredientComponent } from './ingredient/ingredient.component';
 
 @NgModule({
   declarations: [
+    /* start components */
     ShoppingListEditComponent,
     IngredientComponent
+    /* end components */
   ],
   imports: [
+    /* external modules */
     CommonModule,
+    /* end external modules */
+
+    /* created modules */
     ShopeRoutingModule,
+    /* end created modules */
+
+    /* routing module */
     RouterModule
+    /* end routing module */
     
   ]
 })
