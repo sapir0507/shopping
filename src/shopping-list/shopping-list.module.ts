@@ -1,33 +1,23 @@
 import { NgModule } from '@angular/core';
-import { ShopeRoutingModule } from './shopping-list-routing.module';
-import { RouterModule } from '@angular/router';
-
 import { CommonModule } from '@angular/common';
-import { ShoppingListEditComponent } from './shopping-list-edit/shopping-list-edit.component';
+import { ShoppingListComponent } from './shopping-list.component';
+import { ShopeRoutingModule } from './shopping-list-routing.module';
+import { ListComponent } from './list/list.component';
 import { IngredientComponent } from './ingredient/ingredient.component';
+import { ShoppingListEditComponent } from './shopping-list-edit/shopping-list-edit.component';
 
 
 
 @NgModule({
   declarations: [
-    /* start components */
-    ShoppingListEditComponent,
-    IngredientComponent
-    /* end components */
+    ShoppingListComponent,
+    ListComponent,
+    IngredientComponent,
+    ShoppingListEditComponent
   ],
   imports: [
-    /* external modules */
     CommonModule,
-    /* end external modules */
-
-    /* created modules */
-    ShopeRoutingModule,
-    /* end created modules */
-
-    /* routing module */
-    RouterModule
-    /* end routing module */
-    
+    ShopeRoutingModule
   ]
 })
 export class ShoppingListModule { }
