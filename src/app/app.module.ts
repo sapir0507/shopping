@@ -10,12 +10,16 @@ import { ShoppingListModule } from '../shopping-list/shopping-list.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { RecipeRoutingModule } from 'src/recipe-book/recipe-book-routing.module';
+import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './header/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    NavbarComponent
 
   ],
   imports: [
