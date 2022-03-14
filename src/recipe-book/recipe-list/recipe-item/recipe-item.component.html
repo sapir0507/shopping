@@ -1,5 +1,5 @@
 
-<div *ngIf="item">
+<div *ngIf="item" class="ngSpace">
     <a 
         href="#" class="list-group-item clearfix"
     >
@@ -9,10 +9,9 @@
             </h4>
             <p class="list-group-item-text" [innerText]="item.recipe.description">
             </p>
-            <span class="pull-right">
-                <img [src]="item.recipe.imgPath" alt="img-responsive" style="max-height: 50px;">
-            </span>
-
         </div>
+        <span class="pull-right">
+            <img [src]="item.recipe.imgPath" alt="img-responsive" style="max-height: 50px;">
+        </span>
     </a>
 </div>
