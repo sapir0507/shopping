@@ -1,1 +1,18 @@
-<p>recipe-item works!</p>
+
+<div *ngIf="item">
+    <a 
+        href="#" class="list-group-item clearfix"
+    >
+        <div class="pull-left" >
+            <h4 class="list-group-item-heading"
+            [innerText]="item.recipe.name">
+            </h4>
+            <p class="list-group-item-text" [innerText]="item.recipe.description">
+            </p>
+            <span class="pull-right">
+                <img [src]="item.recipe.imgPath" alt="img-responsive" style="max-height: 50px;">
+            </span>
+
+        </div>
+    </a>
+</div>
