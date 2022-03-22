@@ -26,5 +26,9 @@ import { RecipeDetailsComponent } from './recipe-details/recipe-details.componen
     RecipeRoutingModule
     /* end routing modules */
   ]
+  ,
+  exports:[
+    RecipeBookComponent
+  ]
 })
 export class RecipeBookModule { }

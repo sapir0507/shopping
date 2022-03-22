@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
+import { NavBarComponent } from './header/nav-bar/nav-bar.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { NavbarComponent } from './header/navbar/navbar.component';
     HomeComponent,
     HeaderComponent,
     NavbarComponent,
+    NavBarComponent
   ],
   imports: [
     /* external modules */

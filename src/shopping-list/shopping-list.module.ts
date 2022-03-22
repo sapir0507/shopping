@@ -18,6 +18,9 @@ import { ShoppingListEditComponent } from './shopping-list-edit/shopping-list-ed
   imports: [
     CommonModule,
     ShopeRoutingModule
+  ],
+  exports:[
+    ShoppingListComponent
   ]
 })
 export class ShoppingListModule { }
