@@ -7,21 +7,22 @@ import { RecipeRoutingModule } from '../recipe-book/recipe-book-routing.module';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { RecipeBookModule } from '../recipe-book/recipe-book.module';
-import { ShoppingListModule } from '../shopping-list/shopping-list.module';
+// import { RecipeBookModule } from '../recipe-book/recipe-book.module';
+// import { ShoppingListModule } from '../shopping-list/shopping-list.module';
+import { HomeModule } from 'src/home/home.module';
+
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { NavBarComponent } from './header/nav-bar/nav-bar.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    HomeComponent,
     HeaderComponent,
     NavbarComponent,
     NavBarComponent
@@ -40,8 +41,9 @@ import { NavBarComponent } from './header/nav-bar/nav-bar.component';
     /* end routhing */
 
     /* in project modules */ 
-    RecipeBookModule,
-    ShoppingListModule
+    // RecipeBookModule,
+    // ShoppingListModule,
+    HomeModule
     /* end project modules */
   ],
   providers: [],

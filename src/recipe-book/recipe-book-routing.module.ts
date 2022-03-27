@@ -11,13 +11,16 @@ const Shoppingroutes: Routes = [
       path:'recipeBook',
       children:[
         {
-          path: '', component: RecipeBookComponent
+          path: '', 
+          component: RecipeBookComponent
         },
         {
-          path: 'item', component: RecipeItemComponent 
+          path: 'item', 
+          component: RecipeItemComponent 
         },
         {
-          path: 'list', component: RecipeListComponent 
+          path: 'list', 
+          component: RecipeListComponent 
         }
       ]
   },

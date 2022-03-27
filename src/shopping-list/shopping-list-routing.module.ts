@@ -11,16 +11,20 @@ const Shoppingroutes: Routes = [
       path:'shoppingList',
       children:[
         {
-          path: '', component: ShoppingListComponent
+          path: '', 
+          component: ShoppingListComponent
         },
         {
-          path: 'list', component: ListComponent
+          path: 'list', 
+          component: ListComponent
         },
         {
-          path: 'ingredient', component:  IngredientComponent
+          path: 'ingredient', 
+          component:  IngredientComponent
         },
         {
-          path: 'edit', component:  ShoppingListEditComponent
+          path: 'edit', component:  
+          ShoppingListEditComponent
         }
       ]
   },

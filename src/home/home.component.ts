@@ -11,8 +11,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
   getTitleClass = () => {
     return "main_title";
   }
+  
 }
