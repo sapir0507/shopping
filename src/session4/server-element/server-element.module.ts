@@ -12,6 +12,9 @@ import { ServerElementComponent } from './server-element.component';
   imports: [
     CommonModule,
     ServerElementRoutingModule
+  ],
+  exports:[
+    ServerElementComponent
   ]
 })
 export class ServerElementModule { }

@@ -16,6 +16,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { NavBarComponent } from './header/nav-bar/nav-bar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CockpitModule } from 'src/session4/cockpit/cockpit.module';
 
 
 
@@ -31,20 +33,23 @@ import { NavBarComponent } from './header/nav-bar/nav-bar.component';
     /* external modules */
     BrowserModule,
     RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
     /* end external modules */
     
     /* routing */ 
     RecipeRoutingModule,/* external paths go before the root*/
     ShopeRoutingModule,
+    
 
     AppRoutingModule,
     /* end routhing */
 
     /* in project modules */ 
-    // RecipeBookModule,
-    // ShoppingListModule,
-    HomeModule
+    HomeModule,
+    CockpitModule
     /* end project modules */
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

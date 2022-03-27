@@ -1,1 +1,30 @@
 <p>cockpit works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+            <div class="input">
+                <label>server name:</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    formControlName="serverName" 
+                    placeholder="Enter Server Name"
+                >
+                <label>server content: </label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    formControlName="serverContent" 
+                    placeholder="Enter Server Content"
+                >
+                <br>
+                <button type="submit" class="btn btn-primary">Update Profile</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <!-- <ng-content *ngFor="let server of servers"></ng-content> -->
+    </div>
+</div>
