@@ -1,0 +1,26 @@
+:host{
+    .my-navbar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 20px;
+        a{
+            font-size: 18px;
+            text-decoration: none;
+            border-bottom: 0px solid white;
+            // align-self: center;
+            text-align: center;
+            transition: all .1s;
+            
+            &:hover{
+                border-bottom: 5px solid white;
+                transition: all .1s;
+            }   
+            &.router-link-active{
+                color: crimson;
+            }
+        }
+    }
+}
+
